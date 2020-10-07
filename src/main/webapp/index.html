@@ -11,6 +11,7 @@
         Lembre-se que a cada reinício do servidor, os dados serão apagados.
     </p>
     <br>
+    <h3>Usuario</h3>
     <form action="usuario.do" method="GET">
         Id: <input name="id"><br>
         Nome: <input name="nome">
@@ -22,6 +23,25 @@
         <input type="hidden" name="oper" value="2" />
         <button>Listar Usuários</button>
     </form>
-
+<pre>---------------------------------------------------</pre>
+    <h3>Mensagem</h3>
+    <form action="mensagem.do" method="GET">
+        Id: <input name="id"><br>
+        Texto: <input name="texto">
+        <input type="hidden" name="opera" value="1" />
+        <button>Inserir Mensagem</button>
+    </form>
+    <br>
+    <form action="mensagem.do" method="GET">
+        <input type="hidden" name="opera" value="2" />
+        <button>Listar Todas as Mensagens</button>
+    </form>
+    <br>
+    <form action="mensagem.do" method="GET">
+        Id: <input name="id"><br>
+        <input type="hidden" name="opera" value="3" />
+        <br>
+        <button>Listar a Mensagem</button>
+    </form>
 </body>
 </html>
